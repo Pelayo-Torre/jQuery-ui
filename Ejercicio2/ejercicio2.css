@@ -30,11 +30,3 @@ body {
 #select-result {
     float: right;
 }
-
-.ok-answer {
-    color:green;
-}
-
-.wrong-answer {
-    color:red;
-}

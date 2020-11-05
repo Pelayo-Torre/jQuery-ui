@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Selector de fechas</title>
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <script src="external/jquery/jquery.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="ejercicio2.js"></script>
+    <link rel="stylesheet" href="ejercicio2.css">
+    <script>
+        var seleccion = new Seleccion('ui-widget-content');
+        seleccion.seleccionar_fechas();
+    </script>
+</head>
+<body>
+    <h1>Ejercicio 1.- Selección de horarios</h1>
+    <h2>Seleccione 2 ó tres franjas horarias.</h2>
+    <p id="feedback"> </p>
+        <div id="select-result">
+            <h2>
+            </h2>
+        </div>
+    <button onclick="seleccion.comprobar()">Comprobar fechas</button>
+    <div id="selectable">
+        <script>
+            seleccion.completar_dias();
+        </script>
+    </div>
+</body>
+</html>

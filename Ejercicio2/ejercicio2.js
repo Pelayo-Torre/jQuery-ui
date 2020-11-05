@@ -32,13 +32,12 @@ class Seleccion {
 
     comprobar() {
         const select_result = document.getElementById("select-result").textContent;
-        var seleccion = select_result.split("-");
-        $("#select-result").empty();
         debugger;
+        var seleccion = select_result.split("-");
         if(seleccion.length == 3 || seleccion.length == 4) {
-            $("#select-result").append("<div class='ok-answer'>Operación permitida</div>");
+            document.getElementById("select-result").textContent = "Operación permitida";
         } else {
-            $("#select-result").append("<div class='wrong-answer'>Operación no permitida</div>");
+            document.getElementById("select-result").textContent = "Operación no permitida. Revise su selección de nuevo.";
         }
     }
 }

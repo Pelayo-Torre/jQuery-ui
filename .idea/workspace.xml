@@ -20,9 +20,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b3fb611-aa2c-415d-ab02-0f538da4c3a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Ejercicio1/ejercicio1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejercicio1/ejercicio1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejercicio1/ejercicio1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/efectos-utilidades/1-class.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/efectos-utilidades/2-animate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/efectos-utilidades/3-hide-efectos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/efectos-utilidades/4-show-efectos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/efectos-utilidades/5-position.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/efectos-utilidades/6-ejemplo-posiciones-cycler.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/ejercicio2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/ejercicio2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/ejercicio2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/external/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/images/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/images/ui-bg_flat_15_cd0a0a_40x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/images/ui-bg_glass_100_e4f1fb_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/images/ui-bg_glass_50_3baae3_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/images/ui-bg_glass_80_d7ebf9_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/images/ui-bg_highlight-hard_70_000000_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/images/ui-bg_highlight-soft_100_deedf7_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/images/ui-bg_highlight-soft_25_ffef8f_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/images/ui-icons_2694e8_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/images/ui-icons_3d80b3_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/images/ui-icons_72a7cf_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/images/ui-icons_ffffff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/jquery-ui.structure.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/jquery-ui.structure.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/jquery-ui.theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio2/jquery-ui.theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ejercicio1/ejercicio1.css" beforeDir="false" afterPath="$PROJECT_DIR$/Ejercicio1/ejercicio1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ejercicio1/ejercicio1.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ejercicio1/ejercicio1.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,15 +83,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Ejercicio1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\adanf\Desktop\Máster Ingeniería Web\Asignaturas\Primero\dpiu\jQuery-ui\jQuery-ui" />
       <recent name="C:\Users\adanf\Desktop\Máster Ingeniería Web\Asignaturas\Primero\dpiu\jQuery-ui\jQuery-ui\Ejercicio1" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\adanf\Desktop\Máster Ingeniería Web\Asignaturas\Primero\dpiu\jQuery-ui\jQuery-ui\Ejercicio1" />
     </key>
   </component>
@@ -83,7 +117,7 @@
       <workItem from="1604505856619" duration="10000" />
       <workItem from="1604505872493" duration="339000" />
       <workItem from="1604522145143" duration="8243000" />
-      <workItem from="1604574094621" duration="6156000" />
+      <workItem from="1604574094621" duration="9733000" />
     </task>
     <servers />
   </component>
@@ -107,65 +141,65 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1180" y="274" key="FileChooserDialogImpl/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604505916590" />
-    <state width="1259" height="23" key="GridCell.Tab.0.bottom" timestamp="1604581154495">
+    <state width="1259" height="23" key="GridCell.Tab.0.bottom" timestamp="1604613515010">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1899" height="23" key="GridCell.Tab.0.bottom/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604578316732" />
-    <state width="1259" height="23" key="GridCell.Tab.0.bottom/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604581154495" />
-    <state width="1259" height="23" key="GridCell.Tab.0.center" timestamp="1604581154495">
+    <state width="1259" height="23" key="GridCell.Tab.0.bottom/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604613515010" />
+    <state width="1259" height="23" key="GridCell.Tab.0.center" timestamp="1604613515008">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1899" height="23" key="GridCell.Tab.0.center/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604578316731" />
-    <state width="1259" height="23" key="GridCell.Tab.0.center/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604581154495" />
-    <state width="1259" height="23" key="GridCell.Tab.0.left" timestamp="1604581154495">
+    <state width="1259" height="23" key="GridCell.Tab.0.center/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604613515008" />
+    <state width="1259" height="23" key="GridCell.Tab.0.left" timestamp="1604613515008">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1899" height="23" key="GridCell.Tab.0.left/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604578316731" />
-    <state width="1259" height="23" key="GridCell.Tab.0.left/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604581154495" />
-    <state width="1259" height="23" key="GridCell.Tab.0.right" timestamp="1604581154495">
+    <state width="1259" height="23" key="GridCell.Tab.0.left/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604613515008" />
+    <state width="1259" height="23" key="GridCell.Tab.0.right" timestamp="1604613515009">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1899" height="23" key="GridCell.Tab.0.right/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604578316732" />
-    <state width="1259" height="23" key="GridCell.Tab.0.right/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604581154495" />
-    <state width="1259" height="23" key="GridCell.Tab.1.bottom" timestamp="1604581154308">
+    <state width="1259" height="23" key="GridCell.Tab.0.right/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604613515009" />
+    <state width="1259" height="23" key="GridCell.Tab.1.bottom" timestamp="1604613514608">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1899" height="23" key="GridCell.Tab.1.bottom/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604578316583" />
-    <state width="1259" height="23" key="GridCell.Tab.1.bottom/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604581154308" />
-    <state width="1259" height="23" key="GridCell.Tab.1.center" timestamp="1604581154308">
+    <state width="1259" height="23" key="GridCell.Tab.1.bottom/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604613514608" />
+    <state width="1259" height="23" key="GridCell.Tab.1.center" timestamp="1604613514608">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1899" height="23" key="GridCell.Tab.1.center/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604578316583" />
-    <state width="1259" height="23" key="GridCell.Tab.1.center/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604581154308" />
-    <state width="1259" height="23" key="GridCell.Tab.1.left" timestamp="1604581154308">
+    <state width="1259" height="23" key="GridCell.Tab.1.center/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604613514608" />
+    <state width="1259" height="23" key="GridCell.Tab.1.left" timestamp="1604613514608">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1899" height="23" key="GridCell.Tab.1.left/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604578316583" />
-    <state width="1259" height="23" key="GridCell.Tab.1.left/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604581154308" />
-    <state width="1259" height="23" key="GridCell.Tab.1.right" timestamp="1604581154308">
+    <state width="1259" height="23" key="GridCell.Tab.1.left/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604613514608" />
+    <state width="1259" height="23" key="GridCell.Tab.1.right" timestamp="1604613514608">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1899" height="23" key="GridCell.Tab.1.right/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604578316583" />
-    <state width="1259" height="23" key="GridCell.Tab.1.right/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604581154308" />
-    <state width="1259" height="23" key="GridCell.Tab.2.bottom" timestamp="1604581154309">
+    <state width="1259" height="23" key="GridCell.Tab.1.right/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604613514608" />
+    <state width="1259" height="23" key="GridCell.Tab.2.bottom" timestamp="1604613514609">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1899" height="23" key="GridCell.Tab.2.bottom/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604578316583" />
-    <state width="1259" height="23" key="GridCell.Tab.2.bottom/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604581154309" />
-    <state width="1259" height="23" key="GridCell.Tab.2.center" timestamp="1604581154309">
+    <state width="1259" height="23" key="GridCell.Tab.2.bottom/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604613514609" />
+    <state width="1259" height="23" key="GridCell.Tab.2.center" timestamp="1604613514608">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1899" height="23" key="GridCell.Tab.2.center/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604578316583" />
-    <state width="1259" height="23" key="GridCell.Tab.2.center/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604581154309" />
-    <state width="1259" height="23" key="GridCell.Tab.2.left" timestamp="1604581154309">
+    <state width="1259" height="23" key="GridCell.Tab.2.center/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604613514608" />
+    <state width="1259" height="23" key="GridCell.Tab.2.left" timestamp="1604613514608">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1899" height="23" key="GridCell.Tab.2.left/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604578316583" />
-    <state width="1259" height="23" key="GridCell.Tab.2.left/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604581154309" />
-    <state width="1259" height="23" key="GridCell.Tab.2.right" timestamp="1604581154309">
+    <state width="1259" height="23" key="GridCell.Tab.2.left/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604613514608" />
+    <state width="1259" height="23" key="GridCell.Tab.2.right" timestamp="1604613514608">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1899" height="23" key="GridCell.Tab.2.right/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604578316583" />
-    <state width="1259" height="23" key="GridCell.Tab.2.right/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604581154309" />
+    <state width="1259" height="23" key="GridCell.Tab.2.right/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1604613514608" />
   </component>
 </project>
