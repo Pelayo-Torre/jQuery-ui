@@ -1,6 +1,6 @@
 class Game {
 
-
+    carta = "pictures/carta.jpg";
     constructor() {
         const tardelli = "pictures/tardelli.jpg";
         const grosso = "pictures/grosso.jpg";
@@ -83,7 +83,30 @@ class Game {
             if(i === this.fotos.length / 2) {
                 document.write("<br>");
             }
-            document.write("<a id='"+this.fotos[i].id+"'><img src='"+this.fotos[i].picture+"'></a>");
+            document.write(
+                "<a id='a-" +this.fotos[i].id + "-" + i + "' onclick=game.darVuelta('" + "img-" + this.fotos[i].id + "-" + i + "')>" +
+                "<img id='img-" + this.fotos[i].id + "-" + i + "' src='"+this.carta +"'>" +
+                "</a>"
+            );
         }
+    }
+
+    darVuelta(id) {
+        var numb = parseInt(id.split("-")[2]);
+        
+        if (numb === 0) {
+            this.cambiarFoto(id, numb)
+        }
+        else {
+            for(let i=0; i< this.fotos.length; i++) {
+                if (i === numb) {
+                    this.cambiarFoto(id, numb)
+                }
+            }
+        }
+    }
+
+    cambiarFoto(id, numero) {
+        $("#" + id).attr("src",this.fotos[numero].picture);
     }
 }
