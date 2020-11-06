@@ -1,6 +1,8 @@
 class Game {
 
     carta = "pictures/carta.jpg";
+    cartasLevantadas = [];
+
     constructor() {
         const tardelli = "pictures/tardelli.jpg";
         const grosso = "pictures/grosso.jpg";
@@ -13,62 +15,74 @@ class Game {
             {
                 id: 1,
                 picture: tardelli,
-                src: "https://youtu.be/CVDQbQiD1uk"
+                src: "https://youtu.be/CVDQbQiD1uk",
+                solved: false
             },
             {
                 id: 1,
                 picture: tardelli,
-                src: "https://youtu.be/CVDQbQiD1uk"
+                src: "https://youtu.be/CVDQbQiD1uk",
+                solved: false
             },
             {
                 id: 2,
                 picture: grosso,
-                src: "https://www.youtube.com/watch?v=1YJOrPA4dGM"
+                src: "https://www.youtube.com/watch?v=1YJOrPA4dGM",
+                solved: false
             },
             {
                 id: 2,
                 picture: grosso,
-                src: "https://www.youtube.com/watch?v=1YJOrPA4dGM"
+                src: "https://www.youtube.com/watch?v=1YJOrPA4dGM",
+                solved: false
             },
             {
                 id: 3,
                 picture: toro,
-                src: "https://www.youtube.com/watch?v=Rk2OZwm9Wkc"
+                src: "https://www.youtube.com/watch?v=Rk2OZwm9Wkc",
+                solved: false
             },
             {
                 id: 3,
                 picture: toro,
-                src: "https://www.youtube.com/watch?v=Rk2OZwm9Wkc"
+                src: "https://www.youtube.com/watch?v=Rk2OZwm9Wkc",
+                solved: false
             },
             {
                 id: 4,
                 picture: cassano,
-                src: "https://www.youtube.com/watch?v=lUsOm6rhmkA"
+                src: "https://www.youtube.com/watch?v=lUsOm6rhmkA",
+                solved: false
             },
             {
                 id: 4,
                 picture: cassano,
-                src: "https://www.youtube.com/watch?v=lUsOm6rhmkA"
+                src: "https://www.youtube.com/watch?v=lUsOm6rhmkA",
+                solved: false
             },
             {
                 id: 5,
                 picture: baggio,
-                src: "https://www.youtube.com/watch?v=hqd-c44ME08"
+                src: "https://www.youtube.com/watch?v=hqd-c44ME08",
+                solved: false
             },
             {
                 id: 5,
                 picture: baggio,
-                src: "https://www.youtube.com/watch?v=hqd-c44ME08"
+                src: "https://www.youtube.com/watch?v=hqd-c44ME08",
+                solved: false
             },
             {
                 id: 6,
                 picture: rossi,
-                src: "https://www.youtube.com/watch?v=7qv-ZbqoMbI&list=PLFvNxeTPgq6b1hpvlUfg2QcQJxwQXUo99&index=138&app=desktop"
+                src: "https://www.youtube.com/watch?v=7qv-ZbqoMbI&list=PLFvNxeTPgq6b1hpvlUfg2QcQJxwQXUo99&index=138&app=desktop",
+                solved: false
             },
             {
                 id: 6,
                 picture: rossi,
-                src: "https://www.youtube.com/watch?v=7qv-ZbqoMbI&list=PLFvNxeTPgq6b1hpvlUfg2QcQJxwQXUo99&index=138&app=desktop"
+                src: "https://www.youtube.com/watch?v=7qv-ZbqoMbI&list=PLFvNxeTPgq6b1hpvlUfg2QcQJxwQXUo99&index=138&app=desktop",
+                solved: false
             },
         ];
         this.fotos.sort(function () {
@@ -92,21 +106,61 @@ class Game {
     }
 
     darVuelta(id) {
+        this.toques ++;
         var numb = parseInt(id.split("-")[2]);
-        
         if (numb === 0) {
             this.cambiarFoto(id, numb)
         }
         else {
             for(let i=0; i< this.fotos.length; i++) {
                 if (i === numb) {
-                    this.cambiarFoto(id, numb)
+                    this.cambiarFoto(id, numb);
                 }
+            }
+        }
+        debugger;
+        if (this.cartasLevantadas.length > 1) {
+            var changed = false;
+            if(this.cartasLevantadas[0].split("-")[1] === id.split("-")[1]) {
+                for(let i=0; i< this.fotos.length; i++) {
+                    if (this.fotos[i].id === parseInt(id.split("-")[1])) {
+                        this.fotos[i].solved = true;
+                        changed = true;
+                        this.cartasLevantadas = [];
+                    }
+                }
+            }
+            if(!changed) {
+                this.bajarCartas();
+                this.cartasLevantadas = [];
+            }
+        }
+    }
+
+    bajarCartas() {
+        for(let i=0; i< this.fotos.length; i++) {
+            if (!this.fotos[i].solved) {
+                $("#img-" + this.fotos[i].id + "-" + i).attr("src", this.carta);
             }
         }
     }
 
     cambiarFoto(id, numero) {
-        $("#" + id).attr("src",this.fotos[numero].picture);
+        var cont = true;
+        debugger;
+        for(let i=0; i< this.fotos.length; i++) {
+            if(this.fotos[i].solved && this.fotos[i].id === parseInt(id.split("-")[1])) {
+                cont = false;
+            }
+        }
+        if(cont) {
+            var imagen = document.getElementById(id).src;
+            this.cartasLevantadas.push(id);
+            if(imagen.includes(this.carta)) {
+                $("#" + id).attr("src",this.fotos[numero].picture);
+            } else {
+                $("#" + id).attr("src",this.carta);
+            }
+        }
     }
 }
