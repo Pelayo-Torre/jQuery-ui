@@ -1,43 +1,89 @@
-class Seleccion {
+class Game {
 
-    fechas_seleccionadas = [];
 
-    constructor(nombre_clase) {
-        this.nombre_clase = nombre_clase;
-    }
-    seleccionar_fechas() {
-        $(function () {
-            $("#selectable").selectable({
-                stop: function () {
-                    var result = $("#select-result").empty();
-                    $(".ui-selected", this).each(function() {
-                        var idlist = $(this).attr('id');
-                        result.append( "<p> - " + idlist + "</p>");
-                    });
-                }
-            });
+    constructor() {
+        const tardelli = "pictures/tardelli.jpg";
+        const grosso = "pictures/grosso.jpg";
+        const toro = "pictures/torino.jpg";
+        const cassano = "pictures/cassano.jpg";
+        const baggio = "pictures/baggio.jpg"
+        const rossi = "pictures/rossi.jpg";
+
+        this.fotos = [
+            {
+                id: 1,
+                picture: tardelli,
+                src: "https://youtu.be/CVDQbQiD1uk"
+            },
+            {
+                id: 1,
+                picture: tardelli,
+                src: "https://youtu.be/CVDQbQiD1uk"
+            },
+            {
+                id: 2,
+                picture: grosso,
+                src: "https://www.youtube.com/watch?v=1YJOrPA4dGM"
+            },
+            {
+                id: 2,
+                picture: grosso,
+                src: "https://www.youtube.com/watch?v=1YJOrPA4dGM"
+            },
+            {
+                id: 3,
+                picture: toro,
+                src: "https://www.youtube.com/watch?v=Rk2OZwm9Wkc"
+            },
+            {
+                id: 3,
+                picture: toro,
+                src: "https://www.youtube.com/watch?v=Rk2OZwm9Wkc"
+            },
+            {
+                id: 4,
+                picture: cassano,
+                src: "https://www.youtube.com/watch?v=lUsOm6rhmkA"
+            },
+            {
+                id: 4,
+                picture: cassano,
+                src: "https://www.youtube.com/watch?v=lUsOm6rhmkA"
+            },
+            {
+                id: 5,
+                picture: baggio,
+                src: "https://www.youtube.com/watch?v=hqd-c44ME08"
+            },
+            {
+                id: 5,
+                picture: baggio,
+                src: "https://www.youtube.com/watch?v=hqd-c44ME08"
+            },
+            {
+                id: 6,
+                picture: rossi,
+                src: "https://www.youtube.com/watch?v=7qv-ZbqoMbI&list=PLFvNxeTPgq6b1hpvlUfg2QcQJxwQXUo99&index=138&app=desktop"
+            },
+            {
+                id: 6,
+                picture: rossi,
+                src: "https://www.youtube.com/watch?v=7qv-ZbqoMbI&list=PLFvNxeTPgq6b1hpvlUfg2QcQJxwQXUo99&index=138&app=desktop"
+            },
+        ];
+        this.fotos.sort(function () {
+            return Math.random() - 0.5
         });
+        this.toques = 0;
+        this.dibujarCartas();
     }
 
-    completar_dias(){
-        for(var i=1; i<8; i++){
-            var fecha = new Date();
-            fecha.setDate(fecha.getDate() + i);
-            document.write("<li class='" + this.nombre_clase +"' id='mañana del " + fecha.toLocaleDateString() + "'>" + fecha.toLocaleDateString() +  " mañana" + "</li>");
-            document.write("<li class='" + this.nombre_clase +"' id='tarde del " + fecha.toLocaleDateString() + "'>" + fecha.toLocaleDateString() + " tarde" + "</li>");
-            document.write("<li class='" + this.nombre_clase +"' id='noche del " + fecha.toLocaleDateString() + "'>" + fecha.toLocaleDateString() + " noche" + "</li>");
-            document.write("<br>");
-        }
-    }
-
-    comprobar() {
-        const select_result = document.getElementById("select-result").textContent;
-        debugger;
-        var seleccion = select_result.split("-");
-        if(seleccion.length == 3 || seleccion.length == 4) {
-            document.getElementById("select-result").textContent = "Operación permitida";
-        } else {
-            document.getElementById("select-result").textContent = "Operación no permitida. Revise su selección de nuevo.";
+    dibujarCartas() {
+        for(let i=0; i< this.fotos.length; i++){
+            if(i === this.fotos.length / 2) {
+                document.write("<br>");
+            }
+            document.write("<a id='"+this.fotos[i].id+"'><img src='"+this.fotos[i].picture+"'></a>");
         }
     }
 }
