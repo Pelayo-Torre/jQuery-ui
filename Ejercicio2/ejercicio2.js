@@ -118,10 +118,11 @@ class Game {
                 }
             }
         }
-        debugger;
-        if (this.cartasLevantadas.length > 1) {
+        if (this.cartasLevantadas.length > 1){
+            setTimeout(function(){ }, 3000);
             var changed = false;
-            if(this.cartasLevantadas[0].split("-")[1] === id.split("-")[1]) {
+            if(this.cartasLevantadas[0].split("-")[1] === id.split("-")[1]
+                && this.cartasLevantadas[0] !== this.cartasLevantadas[1]) {
                 for(let i=0; i< this.fotos.length; i++) {
                     if (this.fotos[i].id === parseInt(id.split("-")[1])) {
                         this.fotos[i].solved = true;
@@ -135,6 +136,13 @@ class Game {
                 this.cartasLevantadas = [];
             }
         }
+
+
+        if(this.isFinish()) {
+            this.rellenarVideos();
+            debugger;
+            $("#result").append("<div>¡¡Juego finalizado con " + this.toques + " toques!!</div>");
+        }
     }
 
     bajarCartas() {
@@ -147,7 +155,6 @@ class Game {
 
     cambiarFoto(id, numero) {
         var cont = true;
-        debugger;
         for(let i=0; i< this.fotos.length; i++) {
             if(this.fotos[i].solved && this.fotos[i].id === parseInt(id.split("-")[1])) {
                 cont = false;
@@ -158,9 +165,34 @@ class Game {
             this.cartasLevantadas.push(id);
             if(imagen.includes(this.carta)) {
                 $("#" + id).attr("src",this.fotos[numero].picture);
+                $("#" + id).attr("currentSrc",this.fotos[numero].picture);
+
             } else {
                 $("#" + id).attr("src",this.carta);
             }
         }
+    }
+
+    isFinish() {
+        for(let i=0; i< this.fotos.length; i++) {
+            if(!this.fotos[i].solved) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    rellenarVideos(){
+        for(let i=0; i< this.fotos.length; i++) {
+            if(i === this.fotos.length / 2) {
+                document.write("<br>");
+            }
+            document.write(
+                "<a id='a-" +this.fotos[i].id + "-" + i + "' href='" + this.fotos[i].src + "'>" +
+                "<img id='img-" + this.fotos[i].id + "-" + i + "' src='"+this.fotos[i].picture +"'>" +
+                "</a>"
+            );
+        }
+        document.write("<div id='result'> </div>");
     }
 }
