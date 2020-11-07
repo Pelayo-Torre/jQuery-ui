@@ -105,43 +105,43 @@ class Game {
         }
     }
 
-    darVuelta(id) {
-        this.toques ++;
-        var numb = parseInt(id.split("-")[2]);
-        if (numb === 0) {
-            this.cambiarFoto(id, numb)
-        }
-        else {
-            for(let i=0; i< this.fotos.length; i++) {
-                if (i === numb) {
-                    this.cambiarFoto(id, numb);
-                }
-            }
-        }
-        if (this.cartasLevantadas.length > 1){
-            setTimeout(function(){ }, 3000);
-            var changed = false;
-            if(this.cartasLevantadas[0].split("-")[1] === id.split("-")[1]
-                && this.cartasLevantadas[0] !== this.cartasLevantadas[1]) {
-                for(let i=0; i< this.fotos.length; i++) {
-                    if (this.fotos[i].id === parseInt(id.split("-")[1])) {
-                        this.fotos[i].solved = true;
-                        changed = true;
-                        this.cartasLevantadas = [];
+    async darVuelta(id) {
+        if(this.cartasLevantadas.length < 2) {
+            this.toques++;
+            var numb = parseInt(id.split("-")[2]);
+            if (numb === 0) {
+                this.cambiarFoto(id, numb)
+            } else {
+                for (let i = 0; i < this.fotos.length; i++) {
+                    if (i === numb) {
+                        this.cambiarFoto(id, numb);
                     }
                 }
             }
-            if(!changed) {
-                this.bajarCartas();
-                this.cartasLevantadas = [];
+            if (this.cartasLevantadas.length > 1) {
+                var changed = false;
+                if (this.cartasLevantadas[0].split("-")[1] === id.split("-")[1]
+                    && this.cartasLevantadas[0] !== this.cartasLevantadas[1]) {
+                    for (let i = 0; i < this.fotos.length; i++) {
+                        if (this.fotos[i].id === parseInt(id.split("-")[1])) {
+                            this.fotos[i].solved = true;
+                            changed = true;
+                            this.cartasLevantadas = [];
+                        }
+                    }
+                }
+                if (!changed) {
+                    await new Promise(r => setTimeout(r, 1000));
+                    this.bajarCartas();
+                    this.cartasLevantadas = [];
+                }
             }
-        }
 
 
-        if(this.isFinish()) {
-            this.rellenarVideos();
-            debugger;
-            $("#result").append("<div>¡¡Juego finalizado con " + this.toques + " toques!!</div>");
+            if (this.isFinish()) {
+                this.rellenarVideos();
+                $("#result").append("<div>¡¡Juego finalizado con " + this.toques + " toques!!</div>");
+            }
         }
     }
 
@@ -165,8 +165,6 @@ class Game {
             this.cartasLevantadas.push(id);
             if(imagen.includes(this.carta)) {
                 $("#" + id).attr("src",this.fotos[numero].picture);
-                $("#" + id).attr("currentSrc",this.fotos[numero].picture);
-
             } else {
                 $("#" + id).attr("src",this.carta);
             }
